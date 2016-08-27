@@ -30,8 +30,7 @@ class Button extends Component {
         underlayColor='transparent'
         style={[
           styles.container,
-          {backgroundColor: this.props.backgroundColor},
-          {backgroundColor: this.state.active ? this.props.activeColor : 'white'}
+          {backgroundColor: this.state.active ? this.props.activeColor : this.props.backgroundColor}
         ]}
         onPress={(e) => console.log(e)}
         onHideUnderlay={this._onHideUnderlay.bind(this)}
