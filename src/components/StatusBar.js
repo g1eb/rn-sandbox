@@ -11,8 +11,7 @@ import {
 class StatusBar extends Component {
   render () {
     return (
-      <View style={[styles.statusBar, this.props.style ]}>
-      </View>
+      <View style={[styles.statusBar, this.props.style ]} />
     )
   }
 }
