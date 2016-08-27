@@ -8,12 +8,15 @@ import {
   View,
 } from 'react-native'
 
-import Button from '../components/Button';
+import Container from '../components/Container'
+import StatusBar from '../components/StatusBar'
+import Button from '../components/Button'
 
 class Menu extends Component {
   render() {
     return (
-      <View style={styles.container}>
+      <Container style={styles.container}>
+        <StatusBar style={{backgroundColor: 'whitesmoke'}} />
         <Text style={styles.title}>
           Menu
         </Text>
@@ -32,16 +35,13 @@ class Menu extends Component {
         <View style={styles.button}>
           <Button backgroundColor="whitesmoke" activeColor="rgba(245, 245, 245, 0.5)" text="state 5" />
         </View>
-      </View>
+      </Container>
     );
   }
 }
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
     backgroundColor: 'coral',
   },
   title: {
