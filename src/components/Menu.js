@@ -18,19 +18,19 @@ class Menu extends Component {
           Menu
         </Text>
         <View style={styles.button}>
-          <Button backgroundColor="gold" activeColor="rgba(255, 255, 255, 0.25)" text="state 1" />
+          <Button backgroundColor="whitesmoke" activeColor="rgba(245, 245, 245, 0.5)" text="state 1" />
         </View>
         <View style={styles.button}>
-          <Button backgroundColor="gold" activeColor="rgba(255, 255, 255, 0.25)" text="state 2" />
+          <Button backgroundColor="whitesmoke" activeColor="rgba(245, 245, 245, 0.5)" text="state 2" />
         </View>
         <View style={styles.button}>
-          <Button backgroundColor="gold" activeColor="rgba(255, 255, 255, 0.25)" text="state 3" />
+          <Button backgroundColor="whitesmoke" activeColor="rgba(245, 245, 245, 0.5)" text="state 3" />
         </View>
         <View style={styles.button}>
-          <Button backgroundColor="gold" activeColor="rgba(255, 255, 255, 0.25)" text="state 4" />
+          <Button backgroundColor="whitesmoke" activeColor="rgba(245, 245, 245, 0.5)" text="state 4" />
         </View>
         <View style={styles.button}>
-          <Button backgroundColor="gold" activeColor="rgba(255, 255, 255, 0.25)" text="state 5" />
+          <Button backgroundColor="whitesmoke" activeColor="rgba(245, 245, 245, 0.5)" text="state 5" />
         </View>
       </View>
     );
