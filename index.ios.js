@@ -5,15 +5,23 @@
  */
 
 import React, { Component } from 'react'
-import { AppRegistry } from 'react-native'
+import { AppRegistry, Navigator } from 'react-native'
 
 import Menu from './src/views/Menu'
 
 class sandbox extends Component {
+
+  renderScene(route, navigator) {
+    switch (route.id) {
+      case "Menu":
+        return <Menu />
+    }
+  }
+
   render() {
     return (
-      <Menu />
-    );
+      <Navigator initialRoute={{ id: "Menu" }} renderScene={this.renderScene} />
+    )
   }
 }
 
