@@ -4,15 +4,12 @@ import React, { Component } from 'react'
 
 import {
   StyleSheet,
-  Text,
   View,
 } from 'react-native'
 
 class StatusBar extends Component {
   render () {
-    return (
-      <View style={[styles.statusBar, this.props.style ]} />
-    )
+    return <View style={[styles.statusBar, this.props.style ]} />
   }
 }
 
