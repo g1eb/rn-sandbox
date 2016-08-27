@@ -13,12 +13,16 @@ import {
   View
 } from 'react-native'
 
+import StatusBar from './src/components/StatusBar'
 import Menu from './src/components/Menu'
 
 class sandbox extends Component {
   render() {
     return (
-      <Menu />
+      <View style={styles.container}>
+        <StatusBar style={{backgroundColor: 'whitesmoke'}} />
+        <Menu />
+      </View>
     );
   }
 }
