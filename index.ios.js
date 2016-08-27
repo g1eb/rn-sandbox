@@ -12,9 +12,10 @@ import Menu from './src/views/Menu'
 class sandbox extends Component {
 
   renderScene(route, navigator) {
+    var navigatorProps = { navigator }
     switch (route.id) {
       case "Menu":
-        return <Menu />
+        return <Menu {...navigatorProps} />
     }
   }
 
