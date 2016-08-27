@@ -8,7 +8,7 @@ import {
   View,
 } from 'react-native'
 
-import Button from './Button';
+import Button from '../components/Button';
 
 class Menu extends Component {
   render() {
