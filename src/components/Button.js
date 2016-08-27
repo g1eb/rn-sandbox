@@ -10,6 +10,8 @@ import {
   TouchableHighlight,
 } from 'react-native'
 
+import _ from 'lodash'
+
 class Button extends Component {
 
   constructor (props) {
@@ -37,7 +39,7 @@ class Button extends Component {
         ref={component => this._root = component} {...this.props}>
 
         <Text style={[styles.buttonText, {color: this.props.color} ]}>
-          {this.props.text}
+          {_.capitalize(this.props.text)}
         </Text>
 
       </TouchableHighlight>
