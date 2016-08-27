@@ -10,6 +10,7 @@ import {
 
 import Container from '../components/Container'
 import StatusBar from '../components/StatusBar'
+import Header from '../components/Header'
 import Button from '../components/Button'
 
 class Menu extends Component {
@@ -17,9 +18,7 @@ class Menu extends Component {
     return (
       <Container style={styles.container}>
         <StatusBar style={{backgroundColor: 'whitesmoke'}} />
-        <Text style={styles.title}>
-          Menu
-        </Text>
+        <Header title="Menu" />
         <View style={styles.button}>
           <Button backgroundColor="whitesmoke" activeColor="rgba(245, 245, 245, 0.5)" text="state 1" />
         </View>
