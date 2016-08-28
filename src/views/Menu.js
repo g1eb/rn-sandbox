@@ -5,6 +5,7 @@ import React, { Component } from 'react'
 import {
   StyleSheet,
   View,
+  ListView,
 } from 'react-native'
 
 import Container from '../components/Container'
@@ -37,23 +38,20 @@ class Menu extends Component {
       <Container style={styles.container}>
         <StatusBar style={{backgroundColor: 'whitesmoke'}} />
         <Header title="Menu" />
-        <View style={styles.button}>
-          <Button backgroundColor="whitesmoke" activeColor="rgba(245, 245, 245, 0.5)" text="state 1" />
-        </View>
-        <View style={styles.button}>
-          <Button backgroundColor="whitesmoke" activeColor="rgba(245, 245, 245, 0.5)" text="state 2" />
-        </View>
-        <View style={styles.button}>
-          <Button backgroundColor="whitesmoke" activeColor="rgba(245, 245, 245, 0.5)" text="state 3" />
-        </View>
-        <View style={styles.button}>
-          <Button backgroundColor="whitesmoke" activeColor="rgba(245, 245, 245, 0.5)" text="state 4" />
-        </View>
-        <View style={styles.button}>
-          <Button backgroundColor="whitesmoke" activeColor="rgba(245, 245, 245, 0.5)" text="state 5" />
-        </View>
+        <ListView dataSource={this.state.menuItems} renderRow={(item) => {return this._renderMenuItem(item)}} />
       </Container>
-    );
+    )
+  }
+
+  _renderMenuItem(item) {
+    return (
+      <View style={styles.button}>
+        <Button
+          text={item.text}
+          backgroundColor="whitesmoke"
+          activeColor="rgba(245, 245, 245, 0.5)" />
+      </View>
+    )
   }
 }
 
