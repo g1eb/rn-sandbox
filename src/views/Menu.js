@@ -51,6 +51,7 @@ class Menu extends Component {
     this.props.navigator.push({
       id: 'detail',
       item: item,
+      sceneConfigs: item.stateTransition,
     })
   }
 }
