@@ -59,12 +59,6 @@ const styles = StyleSheet.create({
   container: {
     backgroundColor: 'coral',
   },
-  title: {
-    height: 150,
-    fontSize: 52,
-    color: '#333',
-    fontFamily: 'Helvetica',
-  },
   button: {
     flexDirection: 'row',
     justifyContent: 'flex-start',
