@@ -49,9 +49,17 @@ class Menu extends Component {
         <Button
           text={item.text}
           backgroundColor="whitesmoke"
-          activeColor="rgba(245, 245, 245, 0.5)" />
+          activeColor="rgba(245, 245, 245, 0.5)"
+          onPress={() => this._navigate(item)} />
       </View>
     )
+  }
+
+  _navigate (item) {
+    this.props.navigator.push({
+      id: 'detail',
+      item: item,
+    })
   }
 }
 

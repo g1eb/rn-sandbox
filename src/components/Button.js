@@ -30,7 +30,6 @@ class Button extends Component {
           styles.container,
           {backgroundColor: this.state.active ? this.props.activeColor : this.props.backgroundColor}
         ]}
-        onPress={(e) => console.log(e)}
         onHideUnderlay={this._onHideUnderlay.bind(this)}
         onShowUnderlay={this._onShowUnderlay.bind(this)}
         ref={component => this._root = component} {...this.props}>
