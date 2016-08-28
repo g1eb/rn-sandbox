@@ -8,6 +8,7 @@ import React, { Component } from 'react'
 import { AppRegistry, Navigator } from 'react-native'
 
 import Menu from './src/views/Menu'
+import Error from './src/views/Error'
 
 class sandbox extends Component {
 
@@ -16,6 +17,10 @@ class sandbox extends Component {
     switch (route.id) {
       case "Menu":
         return <Menu {...navigatorProps} />
+        break
+      default:
+        return <Error {...navigatorProps} />
+        break
     }
   }
 
