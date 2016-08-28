@@ -24,6 +24,21 @@ class Button extends Component {
     this._root.setNativeProps(nativeProps);
   }
 
+  _renderIcon () {
+    if ( !!this.props.icon ) {
+      return (
+        <Icon style={[
+          styles.buttonIcon,
+          {color: this.props.color},
+          this.props.iconAlign === 'left' && {left: 15},
+          this.props.iconAlign === 'right' && {right: 15},
+        ]} name={this.props.icon} size={25} />
+      )
+    } else {
+      return null
+    }
+  }
+
   render() {
     return (
       <TouchableHighlight
@@ -37,12 +52,7 @@ class Button extends Component {
         onShowUnderlay={this._onShowUnderlay.bind(this)}
         ref={component => this._root = component} {...this.props}>
         <View style={styles.buttonWrapper}>
-          <Icon style={[
-            styles.buttonIcon,
-            {color: this.props.color},
-            this.props.iconAlign === 'left' && {left: 15},
-            this.props.iconAlign === 'right' && {right: 15},
-          ]} name={this.props.icon} size={25} />
+          {this._renderIcon()}
           <View style={{flex: 1}} />
           <Text style={[styles.buttonText, {color: this.props.color}]}>
             {_.capitalize(this.props.text)}
