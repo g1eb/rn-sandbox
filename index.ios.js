@@ -11,13 +11,21 @@ import Menu from './src/views/Menu'
 import Detail from './src/views/Detail'
 import Error from './src/views/Error'
 
+const menuItems = [
+  { id: '1', name: 'State 1' },
+  { id: '2', name: 'State 2' },
+  { id: '3', name: 'State 3' },
+  { id: '4', name: 'State 4' },
+  { id: '5', name: 'State 5' },
+]
+
 class sandbox extends Component {
 
   renderScene(route, navigator) {
     var navigatorProps = { navigator }
     switch (route.id) {
       case 'menu':
-        return <Menu {...navigatorProps} />
+        return <Menu items={menuItems} {...navigatorProps} />
         break
       case 'detail':
         return <Detail item={route.item} {...navigatorProps} />
