@@ -7,19 +7,25 @@ import Container from 'sandbox/src/components/Container'
 import StatusBar from 'sandbox/src/components/StatusBar'
 import Header from 'sandbox/src/components/Header'
 import Button from 'sandbox/src/components/Button'
+import Counter from 'sandbox/src/components/Counter'
 
 class Detail extends Component {
+
   _renderContent () {
     if ( !!this.props.item.type ) {
-      return (
-        <View style={{flex: 1}} />
-      )
+      switch (this.props.item.type) {
+        case 'counter':
+          return <Counter />
+        default:
+          return null
+      }
     } else {
       return (
         <View style={{flex: 1}} />
       )
     }
   }
+
   render() {
     return (
       <Container style={[styles.container, {backgroundColor: this.props.item.backgroundColor}]}>
