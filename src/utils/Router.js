@@ -3,9 +3,9 @@
 import React, { Component } from 'react'
 import { AppRegistry, Navigator } from 'react-native'
 
-import Menu from '../views/Menu'
-import Detail from '../views/Detail'
-import Error from '../views/Error'
+import Menu from 'sandbox/src/views/Menu'
+import Detail from 'sandbox/src/views/Detail'
+import Error from 'sandbox/src/views/Error'
 
 const menuItems = [
   { id: '1', name: 'State 1', desc: 'add description here..', stateTransition: Navigator.SceneConfigs.FloatFromRight, backgroundColor: 'lightgoldenrodyellow' },

@@ -3,9 +3,9 @@
 import React, { Component } from 'react'
 import { StyleSheet } from 'react-native'
 
-import Container from '../components/Container'
-import StatusBar from '../components/StatusBar'
-import Header from '../components/Header'
+import Container from 'sandbox/src/components/Container'
+import StatusBar from 'sandbox/src/components/StatusBar'
+import Header from 'sandbox/src/components/Header'
 
 class Error extends Component {
   render() {

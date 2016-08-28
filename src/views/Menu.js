@@ -8,10 +8,10 @@ import {
   ListView,
 } from 'react-native'
 
-import Container from '../components/Container'
-import StatusBar from '../components/StatusBar'
-import Header from '../components/Header'
-import Button from '../components/Button'
+import Container from 'sandbox/src/components/Container'
+import StatusBar from 'sandbox/src/components/StatusBar'
+import Header from 'sandbox/src/components/Header'
+import Button from 'sandbox/src/components/Button'
 
 class Menu extends Component {
 
