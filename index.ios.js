@@ -15,7 +15,7 @@ class sandbox extends Component {
   renderScene(route, navigator) {
     var navigatorProps = { navigator }
     switch (route.id) {
-      case "Menu":
+      case 'menu':
         return <Menu {...navigatorProps} />
         break
       default:
@@ -26,7 +26,7 @@ class sandbox extends Component {
 
   render() {
     return (
-      <Navigator initialRoute={{ id: "Menu" }} renderScene={this.renderScene} />
+      <Navigator initialRoute={{ id: 'menu' }} renderScene={this.renderScene} />
     )
   }
 }
