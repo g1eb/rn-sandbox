@@ -41,6 +41,7 @@ class Menu extends Component {
         <Button
           text={item.name}
           icon={item.icon}
+          iconAlign="right"
           backgroundColor={item.backgroundColor}
           activeColor="rgba(245, 245, 245, 0.5)"
           onPress={() => this._navigate(item)} />

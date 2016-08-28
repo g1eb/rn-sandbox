@@ -37,7 +37,12 @@ class Button extends Component {
         onShowUnderlay={this._onShowUnderlay.bind(this)}
         ref={component => this._root = component} {...this.props}>
         <View style={styles.buttonWrapper}>
-          <Icon style={[styles.buttonIcon, {color: this.props.color}]} name={this.props.icon} size={25} />
+          <Icon style={[
+            styles.buttonIcon,
+            {color: this.props.color},
+            this.props.iconAlign === 'left' && {left: 15},
+            this.props.iconAlign === 'right' && {right: 15},
+          ]} name={this.props.icon} size={25} />
           <View style={{flex: 1}} />
           <Text style={[styles.buttonText, {color: this.props.color}]}>
             {_.capitalize(this.props.text)}
@@ -73,8 +78,6 @@ const styles = StyleSheet.create({
   buttonIcon: {
     color: '#333',
     position: 'absolute',
-    left: 15,
-    top: 3,
   },
   buttonText: {
     fontSize: 24,
