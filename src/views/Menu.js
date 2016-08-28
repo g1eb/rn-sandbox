@@ -14,11 +14,11 @@ import Header from '../components/Header'
 import Button from '../components/Button'
 
 const items = [
-  { id: '1', text: 'State 1' },
-  { id: '2', text: 'State 2' },
-  { id: '3', text: 'State 3' },
-  { id: '4', text: 'State 4' },
-  { id: '5', text: 'State 5' },
+  { id: '1', name: 'State 1' },
+  { id: '2', name: 'State 2' },
+  { id: '3', name: 'State 3' },
+  { id: '4', name: 'State 4' },
+  { id: '5', name: 'State 5' },
 ]
 
 class Menu extends Component {
@@ -47,7 +47,7 @@ class Menu extends Component {
     return (
       <View style={styles.button}>
         <Button
-          text={item.text}
+          text={item.name}
           backgroundColor="whitesmoke"
           activeColor="rgba(245, 245, 245, 0.5)"
           onPress={() => this._navigate(item)} />
