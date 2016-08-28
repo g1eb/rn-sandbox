@@ -8,11 +8,11 @@ import Detail from 'sandbox/src/views/Detail'
 import Error from 'sandbox/src/views/Error'
 
 const menuItems = [
-  { id: '1', name: 'State 1', desc: 'add description here..', icon: 'build', stateTransition: Navigator.SceneConfigs.FloatFromRight, backgroundColor: 'lightgoldenrodyellow' },
-  { id: '2', name: 'State 2', desc: 'add description here..', icon: 'query-builder', stateTransition: Navigator.SceneConfigs.FloatFromLeft, backgroundColor: 'mistyrose' },
-  { id: '3', name: 'State 3', desc: 'add description here..', icon: 'rowing', stateTransition: Navigator.SceneConfigs.FloatFromBottom, backgroundColor: 'peachpuff' },
-  { id: '4', name: 'State 4', desc: 'add description here..', icon: 'question-answer', stateTransition: Navigator.SceneConfigs.VerticalUpSwipeJump, backgroundColor: 'antiquewhite' },
-  { id: '5', name: 'State 5', desc: 'add description here..', icon: 'pets', stateTransition: Navigator.SceneConfigs.VerticalDownSwipeJump, backgroundColor: 'bisque' },
+  { id: '1', name: 'State 1', desc: 'add description here..', type: 'counter', icon: 'build', stateTransition: Navigator.SceneConfigs.FloatFromRight, backgroundColor: 'lightgoldenrodyellow' },
+  { id: '2', name: 'State 2', desc: 'add description here..', type: '', icon: 'query-builder', stateTransition: Navigator.SceneConfigs.FloatFromLeft, backgroundColor: 'mistyrose' },
+  { id: '3', name: 'State 3', desc: 'add description here..', type: '', icon: 'rowing', stateTransition: Navigator.SceneConfigs.FloatFromBottom, backgroundColor: 'peachpuff' },
+  { id: '4', name: 'State 4', desc: 'add description here..', type: '', icon: 'question-answer', stateTransition: Navigator.SceneConfigs.VerticalUpSwipeJump, backgroundColor: 'antiquewhite' },
+  { id: '5', name: 'State 5', desc: 'add description here..', type: '', icon: 'pets', stateTransition: Navigator.SceneConfigs.VerticalDownSwipeJump, backgroundColor: 'bisque' },
 ]
 
 class Router extends Component {
