@@ -57,6 +57,7 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     backgroundColor: 'white',
     padding: 10,
+    opacity: 0.85,
   },
   buttonText: {
     fontSize: 24,
