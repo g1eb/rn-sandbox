@@ -42,6 +42,7 @@ class Button extends Component {
           <Text style={[styles.buttonText, {color: this.props.color}]}>
             {_.capitalize(this.props.text)}
           </Text>
+          <View style={{flex: 1}} />
         </View>
       </TouchableHighlight>
     )
@@ -71,6 +72,9 @@ const styles = StyleSheet.create({
   },
   buttonIcon: {
     color: '#333',
+    position: 'absolute',
+    left: 15,
+    top: 3,
   },
   buttonText: {
     fontSize: 24,

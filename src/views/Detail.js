@@ -16,7 +16,7 @@ class Detail extends Component {
         <Header title={this.props.item.name} subtitle={this.props.item.desc} />
         <View style={{flex: 1}} />
         <View style={styles.navbar}>
-          <Button text="Back"
+          <Button text="Back" icon="chevron-left"
             backgroundColor="whitesmoke"
             activeColor="rgba(245, 245, 245, 0.5)"
             onPress={() => this.props.navigator.pop()} />
