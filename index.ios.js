@@ -12,9 +12,9 @@ import Detail from './src/views/Detail'
 import Error from './src/views/Error'
 
 const menuItems = [
-  { id: '1', name: 'State 1', desc: 'add description here..', backgroundColor: 'mistyrose' },
-  { id: '2', name: 'State 2', desc: 'add description here..', backgroundColor: 'peachpuff' },
-  { id: '3', name: 'State 3', desc: 'add description here..', backgroundColor: 'lightgoldenrodyellow' },
+  { id: '1', name: 'State 1', desc: 'add description here..', backgroundColor: 'lightgoldenrodyellow' },
+  { id: '2', name: 'State 2', desc: 'add description here..', backgroundColor: 'mistyrose' },
+  { id: '3', name: 'State 3', desc: 'add description here..', backgroundColor: 'peachpuff' },
   { id: '4', name: 'State 4', desc: 'add description here..', backgroundColor: 'antiquewhite' },
   { id: '5', name: 'State 5', desc: 'add description here..', backgroundColor: 'bisque' },
 ]

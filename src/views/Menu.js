@@ -40,7 +40,7 @@ class Menu extends Component {
       <View style={styles.button}>
         <Button
           text={item.name}
-          backgroundColor="whitesmoke"
+          backgroundColor={item.backgroundColor}
           activeColor="rgba(245, 245, 245, 0.5)"
           onPress={() => this._navigate(item)} />
       </View>
