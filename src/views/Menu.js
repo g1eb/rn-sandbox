@@ -12,7 +12,26 @@ import StatusBar from '../components/StatusBar'
 import Header from '../components/Header'
 import Button from '../components/Button'
 
+const items = [
+  { id: '1', text: 'State 1' },
+  { id: '2', text: 'State 2' },
+  { id: '3', text: 'State 3' },
+  { id: '4', text: 'State 4' },
+  { id: '5', text: 'State 5' },
+]
+
 class Menu extends Component {
+
+  constructor(props) {
+    super(props)
+
+    var ds = new ListView.DataSource({rowHasChanged: (r1, r2) => r1 !== r2})
+
+    this.state = {
+      menuItems: ds.cloneWithRows(items)
+    }
+  }
+
   render() {
     return (
       <Container style={styles.container}>
