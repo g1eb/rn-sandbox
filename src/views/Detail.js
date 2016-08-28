@@ -10,9 +10,9 @@ import Header from '../components/Header'
 class Detail extends Component {
   render() {
     return (
-      <Container style={styles.container}>
+      <Container style={[styles.container, {backgroundColor: this.props.item.backgroundColor}]}>
         <StatusBar style={{backgroundColor: 'whitesmoke'}} />
-        <Header title={this.props.item.name} />
+        <Header title={this.props.item.name} subtitle={this.props.item.desc} />
       </Container>
     )
   }
