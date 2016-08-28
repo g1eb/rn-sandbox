@@ -9,12 +9,23 @@ import Header from 'sandbox/src/components/Header'
 import Button from 'sandbox/src/components/Button'
 
 class Detail extends Component {
+  _renderContent () {
+    if ( !!this.props.item.type ) {
+      return (
+        <View style={{flex: 1}} />
+      )
+    } else {
+      return (
+        <View style={{flex: 1}} />
+      )
+    }
+  }
   render() {
     return (
       <Container style={[styles.container, {backgroundColor: this.props.item.backgroundColor}]}>
         <StatusBar style={{backgroundColor: 'whitesmoke'}} />
         <Header title={this.props.item.name} subtitle={this.props.item.desc} />
-        <View style={{flex: 1}} />
+        {this._renderContent()}
         <View style={styles.navbar}>
           <Button text="Back" icon="chevron-left" iconAlign="left"
             backgroundColor="whitesmoke"
