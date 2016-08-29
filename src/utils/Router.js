@@ -9,7 +9,7 @@ import Error from 'sandbox/src/views/Error'
 
 const menuItems = [
   { id: '1', name: 'Counter', desc: 'use buttons to add/subtract', type: 'counter', icon: 'plus-one', stateTransition: Navigator.SceneConfigs.FloatFromRight, backgroundColor: 'lightgoldenrodyellow' },
-  { id: '2', name: 'State 2', desc: 'add description here..', type: 'asdf', icon: 'query-builder', stateTransition: Navigator.SceneConfigs.FloatFromLeft, backgroundColor: 'mistyrose' },
+  { id: '2', name: 'Scroll', desc: 'infinitely', type: 'scroll', icon: 'list', stateTransition: Navigator.SceneConfigs.FloatFromLeft, backgroundColor: 'mistyrose' },
   { id: '3', name: 'State 3', desc: 'add description here..', type: '', icon: 'build', stateTransition: Navigator.SceneConfigs.FloatFromBottom, backgroundColor: 'peachpuff' },
   { id: '4', name: 'State 4', desc: 'add description here..', type: '', icon: 'question-answer', stateTransition: Navigator.SceneConfigs.VerticalUpSwipeJump, backgroundColor: 'antiquewhite' },
   { id: '5', name: 'State 5', desc: 'add description here..', type: '', icon: 'pets', stateTransition: Navigator.SceneConfigs.VerticalDownSwipeJump, backgroundColor: 'bisque' },

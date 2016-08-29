@@ -8,6 +8,7 @@ import StatusBar from 'sandbox/src/components/StatusBar'
 import Header from 'sandbox/src/components/Header'
 import Button from 'sandbox/src/components/Button'
 import Counter from 'sandbox/src/components/Counter'
+import Scroll from 'sandbox/src/components/Scroll'
 
 class Detail extends Component {
 
@@ -16,6 +17,8 @@ class Detail extends Component {
       switch (this.props.item.type) {
         case 'counter':
           return <Counter />
+        case 'scroll':
+          return <Scroll />
         default:
           return null
       }
