@@ -38,6 +38,12 @@ class Navigateception extends Component {
         <StatusBar style={{backgroundColor: 'whitesmoke'}} />
         <Header title={this.props.item.name} subtitle={this.props.item.desc} />
         <ListView dataSource={this.state.menuItems} renderRow={(item) => {return this._renderMenuItem(item)}} />
+        <View style={styles.navbar}>
+          <Button text="Back" icon="chevron-left" iconAlign="left"
+            backgroundColor="whitesmoke"
+            activeColor="rgba(245, 245, 245, 0.5)"
+            onPress={() => this.props.navigator.pop()} />
+        </View>
       </Container>
     )
   }
@@ -64,6 +70,10 @@ const styles = StyleSheet.create({
     justifyContent: 'flex-start',
     alignItems: 'center',
     height: 50,
+  },
+  navbar: {
+    height: 50,
+    marginBottom: 50,
   }
 })
 
