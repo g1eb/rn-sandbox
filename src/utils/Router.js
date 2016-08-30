@@ -17,7 +17,7 @@ const menuItems = [
   { state: 'navigateception', name: 'Navigateception', desc: 'we have to go deeper!', icon: 'compare-arrows', stateTransition: Navigator.SceneConfigs.FloatFromRight, backgroundColor: 'oldlace' },
 ]
 
-class Router extends Component {
+export default class Router extends Component {
 
   renderScene(route, navigator) {
     var navigatorProps = { navigator }
@@ -47,5 +47,3 @@ class Router extends Component {
     )
   }
 }
-
-module.exports = Router
