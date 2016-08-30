@@ -5,15 +5,17 @@ import { AppRegistry, Navigator } from 'react-native'
 
 import Menu from 'sandbox/src/views/Menu'
 import Detail from 'sandbox/src/views/Detail'
+import Sidebar from 'sandbox/src/views/Sidebar'
+import Tabs from 'sandbox/src/views/Tabs'
 import Navigateception from 'sandbox/src/views/Navigateception'
 import Error from 'sandbox/src/views/Error'
 
 const menuItems = [
   { state: 'detail', type: 'counter', name: 'Counter', desc: 'use buttons to add/subtract', icon: 'plus-one', stateTransition: Navigator.SceneConfigs.FloatFromRight, backgroundColor: 'cornsilk' },
   { state: 'detail', type: 'scroll', name: 'Scroll', desc: 'infinitely', icon: 'list', stateTransition: Navigator.SceneConfigs.FloatFromLeft, backgroundColor: 'blanchedalmond' },
-  { state: 'detail', type: '', name: 'State 3', desc: 'add description here..', icon: 'build', stateTransition: Navigator.SceneConfigs.FloatFromBottom, backgroundColor: 'peachpuff' },
-  { state: 'detail', type: '', name: 'State 4', desc: 'add description here..', icon: 'question-answer', stateTransition: Navigator.SceneConfigs.VerticalUpSwipeJump, backgroundColor: 'antiquewhite' },
-  { state: 'detail', type: '', name: 'State 5', desc: 'add description here..', icon: 'pets', stateTransition: Navigator.SceneConfigs.VerticalDownSwipeJump, backgroundColor: 'bisque' },
+  { state: 'sidebar', name: 'Sidebar', desc: 'should be a sidebar', icon: 'build', stateTransition: Navigator.SceneConfigs.FloatFromBottom, backgroundColor: 'peachpuff' },
+  { state: 'tabs', name: 'Tabs', desc: 'confusing tabs', icon: 'tab', stateTransition: Navigator.SceneConfigs.VerticalUpSwipeJump, backgroundColor: 'antiquewhite' },
+  { state: 'empty', type: '', name: 'Empty', desc: 'add description here..', icon: 'pets', stateTransition: Navigator.SceneConfigs.VerticalDownSwipeJump, backgroundColor: 'bisque' },
   { state: 'navigateception', name: 'Navigateception', desc: 'we have to go deeper!', icon: 'compare-arrows', stateTransition: Navigator.SceneConfigs.FloatFromRight, backgroundColor: 'oldlace' },
 ]
 
@@ -27,6 +29,12 @@ export default class Router extends Component {
         break
       case 'detail':
         return <Detail item={route.item} {...navigatorProps} />
+        break
+      case 'sidebar':
+        return <Sidebar item={route.item} {...navigatorProps} />
+        break
+      case 'tabs':
+        return <Tabs item={route.item} {...navigatorProps} />
         break
       case 'navigateception':
         return <Navigateception item={route.item} {...navigatorProps} />
