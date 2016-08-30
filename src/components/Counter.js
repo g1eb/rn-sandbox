@@ -37,15 +37,15 @@ class Counter extends Component {
         <Text style={styles.counter}>{this.state.counter}</Text>
         <View style={styles.actions}>
           <Button
-            text="+1"
-            backgroundColor="whitesmoke"
-            activeColor="rgba(245, 245, 245, 0.5)"
-            onPress={() => this._incrementCounter()} />
-          <Button
             text="-1"
             backgroundColor="whitesmoke"
             activeColor="rgba(245, 245, 245, 0.5)"
             onPress={() => this._decrementCounter()} />
+          <Button
+            text="+1"
+            backgroundColor="whitesmoke"
+            activeColor="rgba(245, 245, 245, 0.5)"
+            onPress={() => this._incrementCounter()} />
         </View>
       </View>
     )
