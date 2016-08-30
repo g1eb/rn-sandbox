@@ -35,7 +35,7 @@ class Router extends Component {
   render() {
     return (
       <Navigator
-        initialRoute={{ state: 'menu' }}
+        initialRoute={this.props.initialRoute}
         renderScene={this.renderScene}
         configureScene={(route) => ({
           ...route.sceneConfigs || Navigator.SceneConfigs.FloatFromRight })} />

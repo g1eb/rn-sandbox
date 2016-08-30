@@ -7,7 +7,7 @@ import Router from 'sandbox/src/utils/Router'
 
 class sandbox extends Component {
   render() {
-    return <Router />
+    return <Router initialRoute={{state: 'menu'}} />
   }
 }
 
