@@ -37,7 +37,7 @@ class Scroll extends Component {
           scrollEventThrottle={250}
           onEndReachedThreshold={1500}
           showsHorizontalScrollIndicator={false}
-          showsVerticalScrollIndicator={false}
+          showsVerticalScrollIndicator={false}>
           {this.state.arr.map(this._renderRow)}
         </ScrollView>
       </View>
