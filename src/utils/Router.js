@@ -26,22 +26,16 @@ export default class Router extends Component {
     switch (route.state) {
       case 'menu':
         return <Menu items={menuItems} {...navigatorProps} />
-        break
       case 'detail':
         return <Detail item={route.item} {...navigatorProps} />
-        break
       case 'sidebar':
         return <Sidebar item={route.item} {...navigatorProps} />
-        break
       case 'tabs':
         return <Tabs item={route.item} {...navigatorProps} />
-        break
       case 'navigateception':
         return <Navigateception item={route.item} {...navigatorProps} />
-        break
       default:
         return <Error {...navigatorProps} />
-        break
     }
   }
 
