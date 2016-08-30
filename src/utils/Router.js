@@ -5,6 +5,7 @@ import { AppRegistry, Navigator } from 'react-native'
 
 import Menu from 'sandbox/src/views/Menu'
 import Detail from 'sandbox/src/views/Detail'
+import Navigateception from 'sandbox/src/views/Navigateception'
 import Error from 'sandbox/src/views/Error'
 
 const menuItems = [
@@ -13,6 +14,7 @@ const menuItems = [
   { state: 'detail', name: 'State 3', desc: 'add description here..', icon: 'build', stateTransition: Navigator.SceneConfigs.FloatFromBottom, backgroundColor: 'peachpuff' },
   { state: 'detail', name: 'State 4', desc: 'add description here..', icon: 'question-answer', stateTransition: Navigator.SceneConfigs.VerticalUpSwipeJump, backgroundColor: 'blanchedalmond' },
   { state: 'detail', name: 'State 5', desc: 'add description here..', icon: 'pets', stateTransition: Navigator.SceneConfigs.VerticalDownSwipeJump, backgroundColor: 'bisque' },
+  { state: 'navigateception', name: 'Navigateception', desc: 'we have to go deeper!', icon: 'compare-arrows', stateTransition: Navigator.SceneConfigs.FloatFromRight, backgroundColor: 'cornsilk' },
 ]
 
 class Router extends Component {
@@ -25,6 +27,9 @@ class Router extends Component {
         break
       case 'detail':
         return <Detail item={route.item} {...navigatorProps} />
+        break
+      case 'navigateception':
+        return <Navigateception item={route.item} {...navigatorProps} />
         break
       default:
         return <Error {...navigatorProps} />
