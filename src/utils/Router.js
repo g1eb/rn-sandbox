@@ -9,12 +9,12 @@ import Navigateception from 'sandbox/src/views/Navigateception'
 import Error from 'sandbox/src/views/Error'
 
 const menuItems = [
-  { state: 'detail', type: 'counter', name: 'Counter', desc: 'use buttons to add/subtract', icon: 'plus-one', stateTransition: Navigator.SceneConfigs.FloatFromRight, backgroundColor: 'lightgoldenrodyellow' },
-  { state: 'detail', type: 'scroll', name: 'Scroll', desc: 'infinitely', icon: 'list', stateTransition: Navigator.SceneConfigs.FloatFromLeft, backgroundColor: 'mistyrose' },
+  { state: 'detail', type: 'counter', name: 'Counter', desc: 'use buttons to add/subtract', icon: 'plus-one', stateTransition: Navigator.SceneConfigs.FloatFromRight, backgroundColor: 'cornsilk' },
+  { state: 'detail', type: 'scroll', name: 'Scroll', desc: 'infinitely', icon: 'list', stateTransition: Navigator.SceneConfigs.FloatFromLeft, backgroundColor: 'blanchedalmond' },
   { state: 'detail', name: 'State 3', desc: 'add description here..', icon: 'build', stateTransition: Navigator.SceneConfigs.FloatFromBottom, backgroundColor: 'peachpuff' },
-  { state: 'detail', name: 'State 4', desc: 'add description here..', icon: 'question-answer', stateTransition: Navigator.SceneConfigs.VerticalUpSwipeJump, backgroundColor: 'blanchedalmond' },
+  { state: 'detail', name: 'State 4', desc: 'add description here..', icon: 'question-answer', stateTransition: Navigator.SceneConfigs.VerticalUpSwipeJump, backgroundColor: 'antiquewhite' },
   { state: 'detail', name: 'State 5', desc: 'add description here..', icon: 'pets', stateTransition: Navigator.SceneConfigs.VerticalDownSwipeJump, backgroundColor: 'bisque' },
-  { state: 'navigateception', name: 'Navigateception', desc: 'we have to go deeper!', icon: 'compare-arrows', stateTransition: Navigator.SceneConfigs.FloatFromRight, backgroundColor: 'cornsilk' },
+  { state: 'navigateception', name: 'Navigateception', desc: 'we have to go deeper!', icon: 'compare-arrows', stateTransition: Navigator.SceneConfigs.FloatFromRight, backgroundColor: 'oldlace' },
 ]
 
 class Router extends Component {
