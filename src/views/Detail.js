@@ -9,6 +9,7 @@ import Header from 'sandbox/src/components/Header'
 import Button from 'sandbox/src/components/Button'
 import Counter from 'sandbox/src/components/Counter'
 import Scroll from 'sandbox/src/components/Scroll'
+import Swipe from 'sandbox/src/components/Swipe'
 
 class Detail extends Component {
 
@@ -19,6 +20,8 @@ class Detail extends Component {
           return <Counter />
         case 'scroll':
           return <Scroll />
+        case 'swipe':
+          return <Swipe />
         default:
           return null
       }
