@@ -13,48 +13,31 @@ class Swipe extends Component {
   constructor (props) {
     super(props)
 
-    this.state = {
-      x: 0,
-      y: 0,
-    }
+    this.state = { x: 0 }
   }
 
   _setPosition (e) {
-    this.setState({
-      x: this.state.x + (e.nativeEvent.pageX - this.drag.x),
-      y: this.state.y + (e.nativeEvent.pageY - this.drag.y)
-    });
-    this.drag.x = e.nativeEvent.pageX;
-    this.drag.y = e.nativeEvent.pageY;
+    this.setState({ x: this.state.x + (e.nativeEvent.pageX - this.drag.x) })
+    this.drag.x = e.nativeEvent.pageX
   }
 
   _resetPosition (e) {
-    this.dragging = false;
-    this.setState({
-      x: 0,
-      y: 0,
-    })
+    this.dragging = false
+    this.setState({ x: 0 })
   }
 
   _getSwipeStyles () {
-    var transform = [{translateX: this.state.x}, {translateY: this.state.y}];
-
-    return {transform: transform};
+    return {transform: [{translateX: this.state.x}]}
   }
 
   _onStartShouldSetResponder (e) {
-    this.dragging = true;
-
-    this.drag = {
-      x: e.nativeEvent.pageX,
-      y: e.nativeEvent.pageY
-    }
-
-    return true;
+    this.dragging = true
+    this.drag = { x: e.nativeEvent.pageX }
+    return true
   }
 
   _onMoveShouldSetResponder (e) {
-    return true;
+    return true
   }
 
   render () {
