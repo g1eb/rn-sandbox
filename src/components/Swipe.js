@@ -8,12 +8,6 @@ import {
   Text,
 } from 'react-native'
 
-
-var Dimensions = require('Dimensions');
-var windowSize = Dimensions.get('window');
-
-import Button from 'sandbox/src/components/Button'
-
 class Swipe extends Component {
 
   constructor (props) {
@@ -24,7 +18,7 @@ class Swipe extends Component {
       y: 0,
     }
   }
-  
+
   _setPosition (e) {
     this.setState({
       x: this.state.x + (e.nativeEvent.pageX - this.drag.x),
@@ -42,29 +36,14 @@ class Swipe extends Component {
     })
   }
 
-  _getRotationDegree (rotateTop, x) {
-    var rotation = ( (x/windowSize.width) * 100)/3;
-
-    var rotate = rotateTop ? 1 : -1,
-        rotateString = (rotation * rotate) + 'deg';
-
-    return rotateString;
-  }
-
   _getSwipeStyles () {
     var transform = [{translateX: this.state.x}, {translateY: this.state.y}];
-
-    if (this.dragging) {
-        transform.push({rotate: this._getRotationDegree(this.rotateTop, this.state.x)})
-    }
 
     return {transform: transform};
   }
 
   _onStartShouldSetResponder (e) {
     this.dragging = true;
-
-    this.rotateTop = e.nativeEvent.locationY <= 150;
 
     this.drag = {
       x: e.nativeEvent.pageX,
